@@ -1,0 +1,12 @@
+﻿
+> red-de-medios@0.0.0 build
+> tsc -b && vite build
+
+src/components/Layout.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/lib/store.tsx(2,1): error TS6133: 'uuidv4' is declared but its value is never read.
+src/lib/store.tsx(2,30): error TS2307: Cannot find module 'uuid' or its corresponding type declarations.
+src/pages/Checkout.tsx(4,25): error TS6133: 'CreditCard' is declared but its value is never read.
+src/pages/Dashboard.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/pages/Dashboard.tsx(4,22): error TS6133: 'Calendar' is declared but its value is never read.
+src/pages/Landing.tsx(4,48): error TS6133: 'CheckCircle' is declared but its value is never read.
+src/pages/Validator.tsx(2,21): error TS1484: 'User' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
