@@ -8,9 +8,7 @@ export default function Landing() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const mediaId = searchParams.get('media_id');
-  const { login, medios, currentUser } = useMockDB();
-
-  const medioReferente = medios.find(m => m.id === mediaId);
+  const { login, currentUser } = useMockDB();
 
   useEffect(() => {
     if (currentUser) {
