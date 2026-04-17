@@ -48,7 +48,7 @@ export default function Checkout() {
             </div>
             
             <ul className="space-y-4 mb-8 flex-grow">
-              {['Acceso a los 39 medios', 'Sin anuncios publicitarios', 'Boletín semanal resumen'].map((feature, i) => (
+              {['Apoyo al periodismo local', 'Sin anuncios publicitarios', 'Boletín semanal resumen'].map((feature, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-emerald-500 shrink-0" />
                   <span className="text-slate-700 font-medium">{feature}</span>

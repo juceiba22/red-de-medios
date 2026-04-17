@@ -37,16 +37,14 @@ export default function Landing() {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')] opacity-10 bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary"></div>
         <div className="max-w-4xl mx-auto relative z-10 text-center">
-          {medioReferente && (
-            <div className="inline-block bg-accent/20 text-accent-hover border border-accent/30 rounded-full px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide backdrop-blur-md">
-              Vienes invitado por <span className="text-white">{medioReferente.nombre}</span>
-            </div>
-          )}
+          <div className="inline-block bg-accent/20 text-accent-hover border border-accent/30 rounded-full px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide backdrop-blur-md">
+            Comunidad de <span className="text-white">Lectores</span>
+          </div>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-            La red más grande de <span className="text-accent">periodismo independiente</span>.
+            Bancá el auténtico <span className="text-accent">periodismo independiente</span>.
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Una sola suscripción. 39 medios aliados. Acceso total a contenido exclusivo, newsletters premium y eventos presenciales.
+            Hacé tu aporte al Zorzal Diario. Sumate a nuestra comunidad para acceder a newsletter exclusivos, eventos y sostener las noticias de tu barrio.
           </p>
           
           <div className="bg-white/10 p-2 rounded-2xl max-w-xl mx-auto backdrop-blur-sm border border-white/10 shadow-2xl">
@@ -73,15 +71,15 @@ export default function Landing() {
       {/* Benefits Section */}
       <div className="py-24 px-4 max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">¿Qué incluye el bundle The Red?</h2>
-          <p className="text-slate-600 text-lg">Tu aporte mensual se distribuye equitativamente entre los 39 medios para sostener el periodismo libre.</p>
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">¿Qué incluye tu aporte a Zorzal Diario?</h2>
+          <p className="text-slate-600 text-lg">Tu aporte mensual permite que sigamos cubriendo lo que pasa en San Martín y la región.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {[
-            { icon: <Newspaper className="h-8 w-8 text-accent" />, title: 'Contenido Sin Paywall', text: 'Lee artículos de investigación, opinión cortas y largas sin límites de paywall en todos los medios asociados.' },
-            { icon: <MonitorPlay className="h-8 w-8 text-accent" />, title: 'Streaming y Podcasts', text: 'Recibe acceso anticipado o exclusivo a episodios especiales, documentales y streams en vivo.' },
-            { icon: <Users className="h-8 w-8 text-accent" />, title: 'Comunidad y Eventos', text: 'Acceso a la comunidad privada de Discord y descuentos o entradas liberadas a eventos presenciales.' }
+            { icon: <Newspaper className="h-8 w-8 text-accent" />, title: 'Cobertura Libre', text: 'Ayudás a que nuestros artículos y fotorreportajes sigan siendo gratuitos y accesibles para todos.' },
+            { icon: <MonitorPlay className="h-8 w-8 text-accent" />, title: 'Contenido Exclusivo', text: 'Recibí nuestro newsletter para miembros con detrás de escena, análisis extra y entrevistas.' },
+            { icon: <Users className="h-8 w-8 text-accent" />, title: 'Comunidad Zorzal', text: 'Participá en sorteos, descuentos en actividades culturales y eventos presenciales de la región.' }
           ].map((item, i) => (
             <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
               <div className="bg-slate-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
@@ -93,20 +91,13 @@ export default function Landing() {
           ))}
         </div>
 
-        {/* Media grid snippet */}
+        {/* CTA snippet */}
         <div className="bg-slate-900 rounded-3xl p-10 text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 p-12 opacity-10"><Radio className="w-64 h-64 text-white" /></div>
-          <h3 className="text-2xl font-bold text-white mb-8 relative z-10">4 Medios Líderes + 35 Medios Locales</h3>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10">
-            {medios.slice(0, 10).map(m => (
-              <div key={m.id} className="px-4 py-2 bg-slate-800 text-slate-300 rounded-lg text-sm font-medium border border-slate-700">
-                {m.nombre}
-              </div>
-            ))}
-            <div className="px-4 py-2 bg-slate-800/50 text-slate-400 rounded-lg text-sm font-medium border border-slate-800 border-dashed">
-              + 29 medios más
-            </div>
-          </div>
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 relative z-10">Periodismo Local Autogestivo</h3>
+          <p className="text-slate-300 max-w-lg mx-auto relative z-10 text-lg mb-8">
+            Hacer periodismo territorial lleva tiempo y trabajo. Sumate a la comunidad del Zorzal y defendamos juntos el derecho a la información en San Martín.
+          </p>
         </div>
       </div>
     </div>

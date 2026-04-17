@@ -22,13 +22,13 @@ export default function Layout() {
                 <Newspaper className="h-6 w-6 text-white" />
               </div>
               <span className="font-bold text-xl tracking-tight hidden sm:block">
-                Red de Medios<span className="text-accent">.</span>
+                Zorzal Diario<span className="text-accent">.</span>
               </span>
             </Link>
             <nav className="flex items-center gap-4">
               <Link to="/validator" className="text-slate-300 hover:text-white transition-colors flex items-center gap-1 text-sm font-medium">
                 <ShieldCheck className="h-4 w-4" />
-                <span className="hidden sm:inline">Portal Medios</span>
+                <span className="hidden sm:inline">Admin Portal</span>
               </Link>
               {currentUser ? (
                 <>
@@ -50,7 +50,7 @@ export default function Layout() {
       </main>
       <footer className="bg-slate-900 border-t border-slate-800 text-slate-400 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center text-sm">
-          <p>© {new Date().getFullYear()} Red de Medios. Creado para 39 medios independientes.</p>
+          <p>© {new Date().getFullYear()} Zorzal Diario. Periodismo independiente de San Martín.</p>
         </div>
       </footer>
     </div>

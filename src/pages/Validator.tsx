@@ -24,8 +24,8 @@ export default function Validator() {
           <div className="bg-slate-800 p-4 rounded-full inline-flex mb-6">
             <ShieldCheck className="w-12 h-12 text-accent" />
           </div>
-          <h1 className="text-3xl font-bold text-white mb-3">Portal de Validación</h1>
-          <p className="text-slate-400">Exclusivo para la red de medios asociados.</p>
+          <h2 className="text-3xl font-bold text-white mb-2">Portal Administrador</h2>
+          <p className="text-slate-400">Exclusivo para la administración del portal.</p>
         </div>
 
         <form onSubmit={handleValidate} className="mb-8">
